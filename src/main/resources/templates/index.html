@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Beat the Market</title>
+    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="blue">Beat</span><span class="black"> the </span><span class="blue">Market </span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-primary" type="submit"><a th:href="@{/register}" id="registerButtonA">Register</a></button>
+                    <button class="btn btn-outline-success" type="submit"><a th:href="@{/login}" id="loginButtonA">Login</a></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<body>
+<section id="hero">
+    <div class="container" id="heroContainer">
+        <div class="row">
+            <div class="col-sm">
+
+                <span class="subHeadline">HAVE FUN LEARNING!</span><br>
+                <span class="ctaText">Learn Virtual<br>Investing Today</span>
+                <button class="ctaButton"><a href="#" class="itsFree">IT'S FREE!</a></button>
+
+            </div>
+            <div class="col-sm">
+                <img src="./img/UpArrowPic.svg" alt="price going up" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="benefits">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <img src="../Images/dots.svg" alt="artwork" class="img-fluid">
+            </div>
+            <div class="col-5">
+                <ul>
+                    <li>
+                        <img src="./img/greenCircle.svg" alt="green check circle">
+                        <span class="benefits">Engage Students</span>
+                    </li>
+                    <li>
+                        <img src="./img/greenCircle.svg" alt="green check circle">
+                        <span class="benefits">Financial Literacy</span>
+                    </li>
+                    <li>
+                        <img src="./img/greenCircle.svg" alt="green check circle">
+                        <span class="benefits">Positive Influence</span>
+                    </li>
+                    <li>
+                        <img src="./img/greenCircle.svg" alt="green check circle">
+                        <span class="benefits">Live Stock Quotes</span>
+                    </li>
+                    <li>
+                        <img src="./img/greenCircle.svg" alt="green check circle">
+                        <span class="benefits">Competitive Learning</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-5">
+                <img src="./img/students.jpg" alt="group of students">
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-3 testimonial">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="avatar">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="quoteAttribute">-Jane Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 testimonial">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="avatar">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="quoteAttribute">-Jane Doe</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 testimonial">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="avatar">
+                    <div class="card-body">
+                        <div class="align-middle">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="quoteAttribute">-Jane Doe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
